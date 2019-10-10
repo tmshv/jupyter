@@ -8,7 +8,7 @@ services:
     environment:
       - TOKEN=${TOKEN}
     volumes:
-      - /var/data/dropbox/Notebooks:/data
+      - ./data:/data
     ports:
-      - "127.0.0.1:1888:8888"
+      - "127.0.0.1:8888:8888"
 
