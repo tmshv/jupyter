@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app:
+    image: tmshv/jupyter
+    container_name: jupyter
+    restart: always
+    environment:
+      - TOKEN=${TOKEN}
+    volumes:
+      - /var/data/dropbox/Notebooks:/data
+    ports:
+      - "127.0.0.1:1888:8888"
+
