@@ -1,8 +1,8 @@
-version: '3'
+version: '3.7'
 
 services:
   app:
-    image: tmshv/jupyter:1.0
+    image: tmshv/jupyter:2.2
     container_name: jupyter
     restart: always
     environment:
